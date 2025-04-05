@@ -42,8 +42,8 @@ def is_even_upto_21(x: int) -> bool:
     return is_even_dict[x]
 
 
-def is_odd_under_21(x: int) -> bool:
-    """Check if a non-negative number that is less than 21 is odd.
+def is_odd_upto_21(x: int) -> bool:
+    """Check if a non-negative number that is up to 21 is odd.
 
     Why 21, because the binary representation of 21 is 10101 which is a palindrome,
 
