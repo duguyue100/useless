@@ -53,11 +53,6 @@ def is_odd_upto_21(x: int) -> bool:
     Returns:
         bool: True if x is odd and less than 21, False otherwise.
     """
-    if x < 0 or x > 21:
-        raise ValueError("the number must be between 0 and 21")
-
-    assert isinstance(x, int), "the number must be an integer"
-
     return not is_even_upto_21(x)
 
 
