@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-def sort(array: list[int | float], reverse: bool = False) -> list[int | float]:
+def sort_numbers(array: list[int | float], reverse: bool = False) -> list[int | float]:
     """Sorts a list of numbers in ascending or descending order.
 
     Note that this function limits the input to a list of integers or floats.
