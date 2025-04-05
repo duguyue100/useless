@@ -4,7 +4,7 @@ from useless.math import is_divisible_by_3
 from useless.math import is_divisible_by_7
 from useless.math import is_even_binary
 from useless.math import is_even_decimal
-from useless.math import is_even_under_21
+from useless.math import is_even_upto_21
 from useless.math import is_odd_binary
 from useless.math import is_odd_decimal
 from useless.math import is_odd_under_21
@@ -14,13 +14,13 @@ HOLY_NUMBER_MIN = -1
 HOLY_NUMBER_MAX = 73
 
 
-def test_is_even_under_21():
+def test_is_even_upto_21():
     for i in range(HOLY_NUMBER_MIN, HOLY_NUMBER_MAX):
         if i < 0 or i > 21:
             with pytest.raises(ValueError):
-                is_even_under_21(i)
+                is_even_upto_21(i)
         else:
-            assert is_even_under_21(i) == (i % 2 == 0)
+            assert is_even_upto_21(i) == (i % 2 == 0)
 
 
 def test_is_odd_under_21():

@@ -1,5 +1,5 @@
-def is_even_under_21(x: int) -> bool:
-    """Check if a non-negative number that is less than 21 is even.
+def is_even_upto_21(x: int) -> bool:
+    """Check if a non-negative number that is up to 21 is even.
 
     Why 21, because the binary representation of 21 is 10101 which is a palindrome,
 
@@ -58,7 +58,7 @@ def is_odd_under_21(x: int) -> bool:
 
     assert isinstance(x, int), "the number must be an integer"
 
-    return not is_even_under_21(x)
+    return not is_even_upto_21(x)
 
 
 def is_even_decimal(x: int) -> bool:
