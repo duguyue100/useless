@@ -59,3 +59,41 @@ def is_even_decimal(x: int) -> bool:
         return True
 
     return False
+
+
+def is_even_binary(x: int) -> bool:
+    """Check if a non-negative number is even.
+
+    Args:
+        x: The number to check.
+
+    Returns:
+        bool: True if x is even, False otherwise.
+    """
+    assert x >= 0, "the number must be non-negative"
+    assert isinstance(x, int), "the number must be an integer"
+
+    # Convert the number to binary representation
+    binary_str = bin(x)[2:]
+    # Check if the last digit is 0
+    return binary_str[-1] == "0"
+
+
+def is_divisible_by_3(x: int) -> bool:
+    """Check if a non-negative number is divisible by 3.
+
+    Args:
+        x: The number to check.
+
+    Returns:
+        bool: True if x is divisible by 3, False otherwise.
+    """
+    assert x >= 0, "the number must be non-negative"
+    assert isinstance(x, int), "the number must be an integer"
+
+    sum_of_digits = sum(int(digit) for digit in str(x))
+
+    if sum_of_digits % 3 == 0:
+        return True
+
+    return False
