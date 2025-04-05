@@ -56,7 +56,7 @@ def test_is_even_binary():
             with pytest.raises(AssertionError):
                 is_even_binary(i)
         else:
-            assert is_even_decimal(i) == (i % 2 == 0)
+            assert is_even_binary(i) == (i % 2 == 0)
 
 
 def test_is_odd_binary():
@@ -65,7 +65,7 @@ def test_is_odd_binary():
             with pytest.raises(AssertionError):
                 is_odd_binary(i)
         else:
-            assert is_odd_decimal(i) == (i % 2 != 0)
+            assert is_odd_binary(i) == (i % 2 != 0)
 
 
 def test_is_divisible_by_3():

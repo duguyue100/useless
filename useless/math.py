@@ -71,7 +71,7 @@ def is_even_decimal(x: int) -> bool:
         bool: True if x is even, False otherwise.
     """
     assert x >= 0, "the number must be non-negative"
-    assert isinstance(x, int), "the number must be an integer or a float"
+    assert isinstance(x, int), "the number must be an integer"
 
     x_str = str(x)
     if x_str[-1] in ["0", "2", "4", "6", "8"]:
